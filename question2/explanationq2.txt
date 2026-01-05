@@ -1,0 +1,25 @@
+mkdir ~/documents – Creates a directory named documents inside my home directory to store project-related files.
+
+cd ~/documents – Navigates into the documents directory so file operations can be performed inside it.
+
+touch plan.txt – Creates an empty file named plan.txt inside the documents directory.
+
+echo "Finish Linux assignment and submit to GitHub" > plan.txt – Writes sample project text into the plan.txt file.
+
+ls -l plan.txt – Displays the permissions, ownership, file size, and timestamp of the plan.txt file, confirming that it belongs to my user account.
+
+cp plan.txt plan_copy.txt – Creates a duplicate of plan.txt named plan_copy.txt.
+
+cd ~ – Moves back to the home directory to perform folder renaming.
+
+mv documents project_documents – Renames the documents directory to project_documents to better reflect the project scope.
+
+cd project_documents – Enters the renamed project_documents directory.
+
+mkdir archive – Creates a subdirectory named archive inside project_documents for storing copied files.
+
+mv plan_copy.txt archive – Moves the copied file into the archive directory.
+
+ls -R – Recursively lists all files and folders inside project_documents to show the complete directory structure.
+
+realpath archive/plan_copy.txt – Displays the absolute path of the plan_copy.txt file after it has been moved to the archive directory.
