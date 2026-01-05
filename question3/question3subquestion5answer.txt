@@ -1,0 +1,1 @@
+sample_data.txt and sample_hard.txt have the same inode number because a hard link points directly to the same physical file on disk. Both filenames reference the same data and metadata. sample_soft.txt has a different inode because a symbolic link is a separate file that only stores the path to the original file, not the file data itself.
