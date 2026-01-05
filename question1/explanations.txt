@@ -1,0 +1,23 @@
+id – Displays my user ID, group ID, and all groups my account belongs to, confirming my Linux identity and permissions.
+
+pwd – Shows the current working directory where I am performing all operations.
+
+ls -l – Lists the files and directories in the current directory along with permissions, ownership, size, and timestamps.
+
+echo "Linux user environment verified" > user_info.txt – Creates a file named user_info.txt and writes a confirmation message into it.
+
+wc -m user_info.txt – Displays the number of characters in the file, verifying that the content was written correctly.
+
+man mkdir – Opens the manual page for the mkdir command so its available options and usage can be reviewed.
+
+The -p option in mkdir allows creating parent directories automatically if they do not already exist.
+
+ls ~ – Lists all files and directories present in my home directory in alphabetical order.
+
+grep "admin" log.txt – Searches the log.txt file and prints only the lines that contain the word "admin".
+
+uname -r – Displays the version of the Linux kernel currently running on the system.
+
+ping -c 4 google.com – Sends ICMP packets to Google to verify that the system has network connectivity.
+
+uptime – Shows how long the system has been running, the number of logged-in users, and the system load average.
