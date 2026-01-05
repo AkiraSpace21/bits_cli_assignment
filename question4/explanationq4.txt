@@ -1,0 +1,21 @@
+uptime – Displays how long the system has been running, the number of logged-in users, and the system load average.
+
+ps -u $USER – Lists all processes currently running under my user account.
+
+top – Displays real-time CPU and memory usage of running processes and helps identify the process consuming the most CPU.
+
+sleep 300 & – Starts a command that runs for 300 seconds in the background.
+
+ps – Displays the currently running processes so the background process can be verified.
+
+renice 10 -p <PID> – Changes the priority (niceness) of a running process using its process ID.
+
+free -h – Displays memory usage information in a human-readable format including used, free, and available RAM.
+
+df -h ~ – Shows disk space usage of the filesystem where my home directory is located.
+
+echo $SHELL – Displays the name of the shell currently in use.
+
+uname -a > system_report.txt – Redirects system information into a file named system_report.txt.
+
+ncdu – Opens an interactive disk usage viewer that shows how disk space is being used in directories and files.

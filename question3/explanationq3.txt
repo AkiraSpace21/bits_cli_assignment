@@ -1,0 +1,25 @@
+cd ~ – Moves to my home directory where the files and links are created.
+
+echo "This is sample data for link testing" > sample_data.txt – Creates a file named sample_data.txt and writes sample text into it.
+
+ln sample_data.txt sample_hard.txt – Creates a hard link named sample_hard.txt that points to the same inode as sample_data.txt.
+
+ln -s sample_data.txt sample_soft.txt – Creates a symbolic (soft) link named sample_soft.txt that points to sample_data.txt.
+
+ls -i sample_data.txt sample_hard.txt sample_soft.txt – Displays the inode numbers of the original file, the hard link, and the symbolic link.
+
+sample_data.txt and sample_hard.txt share the same inode because hard links point to the same physical file on disk, while the symbolic link has a different inode since it only stores the file path.
+
+ls -l sample_data.txt – Displays detailed file information including permissions, ownership, file size, and timestamps.
+
+du -sh ~ – Shows the total disk space used by my home directory in a human-readable format.
+
+ls -lh ~ – Lists all files in the home directory along with their sizes in a human-readable format.
+
+rm sample_soft.txt – Deletes the symbolic link.
+
+ls sample_data.txt – Verifies that the original file still exists after deleting the symbolic link.
+
+du -h ~ – Displays disk usage of all directories and files inside my home directory.
+
+df -h – Displays disk space usage of all mounted filesystems in a human-readable format.
